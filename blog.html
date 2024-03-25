@@ -4,16 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="stylesheet" href="./assets/css/blog.css">
     <link rel="html" href="index.html">
+    <style>
+        body {
+            background-color: aliceblue;
+            color: black;
+        }
+
+        .dark-mode {
+            background-color: dimgray;
+            color: black;
+        }
+
+        .light-mode {
+            background-color: aliceblue;
+            color: black;
+        }
+    </style>
 </head>
 <body>
-    <header>
+    <nav>
+        <div class="header">
         <h2>My First Blog</h2>
+        </div>
+        <div class="buttons">
         <button type="button"><a href="index.html">Back</a></button>
-    </header>
-    <section id="content"></section>
-    <footer></footer>
+        <button onclick="toggleMode()">Mode</button>
+    </div>
+</nav>
+    <section id="content">
+        <div class="cards">
+            <h4>Title:</h4><br>
+            <p></p>
+        </div>
+        <div class="cards">
+            <h4>Title:</h4><br>
+            <p></p>
+        </div>
+        <div class="cards">
+            <h4>Title:</h4><br>
+            <p></p>
+        </div>
+        <div class="cards">
+            <h4>Title:</h4><br>
+            <p></p>
+        </div>
+    </section>
+    <footer>
+        <h3>Made By: AkcCodes</h3>
+        <ul>
+            <li>Portfolio:</li>
+            <li>GitHub:</li>
+            <li>Email:</li>
+        </ul>
+    </footer>
+    <script>
+        function toggleMode() {
+            let element = document.body;
+            element.className = "dark-mode";
+        } 
+    </script>
     <script src="blog.js"></script>
 </body>
 </html>
