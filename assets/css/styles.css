@@ -1,54 +1,9 @@
-body{
-    position: relative;
+*{
+    background-color: aliceblue;
+    color: black;
 }
 
-header{
-    border: 3px solid black;
-    max-width: 100%;
-    height: 20%;
-    padding: 5%;
-    margin-bottom: 1%;
-}
-
-.left{
-    border: 3px solid black;
-    float: left;
-    width: 50%;
-    height: 700px;
-}
-
-.right{
-    position: relative;
-    float: right;
-    border: 3px solid black;
-    width: 49%;
-    height: 700px;
-}
-
-.right h2{
-    text-align: center;
-    font-size: 100px;
-}
-
-aside{
-    border: 3px solid black;
-    margin: 10px 10px 10px 10px;
-    height: 700px;
-    border-radius: 50%;
-}
-
-aside h1{
-    text-align: center;
-    margin-top: 300px;
-    font-size: 100px;
-}
-
-form{
-    margin-left: 10px;
-    padding-bottom: 20px;
-}
-
-#content{
-    height: 100px;
-    width: 90%;
+.dark-mode{
+    background-color: dimgray;
+    color: black;
 }

@@ -1,36 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ameer Clark's Blog</title>
-    <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="stylesheet" href="./assets/css/form.css">
     <link rel="html" href="blog.html">
+    <style>
+        body {
+            background-color: aliceblue;
+            color: black;
+        }
+
+        .dark-mode {
+            background-color: dimgray;
+            color: black;
+        }
+
+        .light-mode {
+            background-color: aliceblue;
+            color: black;
+        }
+    </style>
 </head>
+
 <body>
-    <header></header>
+    <header>
+        <button onclick="toggleMode()">Mode</button>
+    </header>
 
     <section class="left">
-    <aside class ="Myfirstblog">
-        <h1>My First Blog</h1>
-    </aside>
+        <aside class="Myfirstblog">
+            <h1>My First Blog</h1>
+        </aside>
     </section>
     <section class="right">
         <h2>Talk To Me.</h2>
-            <form>
-                <label for="fname">First Name:</label><br>
-                <input type="text" id="fname" name="fname"><br>
-                <label for="lname">Last Name:</label><br>
-                <input type="text" id="lname" name="lname"><br>
-                <label for="content">Content:</label><br>
-                <input type="text" id="content">
-            </form>
+        <form>
+            <label for="fname">First Name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last Name:</label><br>
+            <input type="text" id="lname" name="lname"><br>
+            <label for="content">Content:</label><br>
+            <input type="text" id="content">
+        </form>
         <button type="button"><a href="blog.html">Submit</a></button>
     </section>
-    
+    <script>
+        function toggleMode() {
+            let element = document.body;
+            element.className = "dark-mode";
+        } 
+    </script>
 
-    <script src="form.js"></script>
     <script src="logic.js"></script>
 </body>
+
 </html>
