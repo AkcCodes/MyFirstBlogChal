@@ -6,31 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ameer Clark's Blog</title>
     <link rel="stylesheet" href="./assets/css/form.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="html" href="blog.html">
-    <style>
-        body {
-            background-color: aliceblue;
-            color: black;
-        }
-
-        .dark-mode {
-            background-color: dimgray;
-            color: black;
-        }
-
-        .light-mode {
-            background-color: aliceblue;
-            color: black;
-        }
-    </style>
 </head>
 
 <body>
+    <div class="container dark-mode">
     <header>
-        <button onclick="toggleMode()">Mode</button>
+        <button type="button" id="colors">Mode</button>
     </header>
 
-    <section class="left">
+    <section class="left"> 
         <aside class="Myfirstblog">
             <h1>My First Blog</h1>
         </aside>
@@ -47,14 +33,8 @@
         </form>
         <button type="button"><a href="blog.html">Submit</a></button>
     </section>
-    <script>
-        function toggleMode() {
-            let element = document.body;
-            element.className = "dark-mode";
-        } 
-    </script>
-
-    <script src="logic.js"></script>
+</div>
+    <script src="./assets/js/logic.js"></script>
 </body>
 
 </html>

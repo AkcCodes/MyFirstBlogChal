@@ -7,31 +7,16 @@
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="stylesheet" href="./assets/css/blog.css">
     <link rel="html" href="index.html">
-    <style>
-        body {
-            background-color: aliceblue;
-            color: black;
-        }
-
-        .dark-mode {
-            background-color: dimgray;
-            color: black;
-        }
-
-        .light-mode {
-            background-color: aliceblue;
-            color: black;
-        }
-    </style>
 </head>
 <body>
+    <div class="container dark-mode">
     <nav>
         <div class="header">
         <h2>My First Blog</h2>
         </div>
         <div class="buttons">
         <button type="button"><a href="index.html">Back</a></button>
-        <button onclick="toggleMode()">Mode</button>
+        <button type="button" id="colors">Mode</button>
     </div>
 </nav>
     <section id="content">
@@ -60,12 +45,8 @@
             <li>Email:</li>
         </ul>
     </footer>
-    <script>
-        function toggleMode() {
-            let element = document.body;
-            element.className = "dark-mode";
-        } 
-    </script>
-    <script src="blog.js"></script>
+</div>
+    <script src="./assets/js/blog.js"></script>
+    <script src="./assets/js/logic.js"></script>
 </body>
 </html>

@@ -3,7 +3,17 @@
     color: black;
 }
 
-.dark-mode{
+/*body {
+    background-color: aliceblue;
+    color: black;
+}
+*/
+.dark-mode {
     background-color: dimgray;
+    color: black;
+}
+
+.light-mode {
+    background-color: aliceblue;
     color: black;
 }
