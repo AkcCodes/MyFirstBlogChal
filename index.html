@@ -12,29 +12,32 @@
 
 <body>
     <div class="container dark-mode">
-    <header>
-        <button type="button" id="colors">Mode</button>
-    </header>
+        <header>
+            <button type="button" id="colors">Mode</button>
+        </header>
 
-    <section class="left"> 
-        <aside class="Myfirstblog">
-            <h1>My First Blog</h1>
-        </aside>
-    </section>
-    <section class="right">
-        <h2>Talk To Me.</h2>
-        <form>
-            <label for="uname">Username:</label><br>
-            <input type="text" id="uname" name="uname"><br>
-            <label for="title">Title:</label><br>
-            <input type="text" id="title"><br>
-            <label for="content">Content:</label><br>
-            <input type="text" id="content">
-        </form>
-        <button type="button"><a href="blog.html">Submit</a></button>
-    </section>
-</div>
+        <section class="left">
+            <aside class="Myfirstblog">
+                <h1>My First Blog</h1>
+            </aside>
+        </section>
+        <section class="right">
+            <h2>Talk To Me.</h2>
+            <form id="myForm" onsubmit="return validateForm()">
+                <label for="uname">Username:</label><br>
+                <input type="text" id="uname" name="uname"><br>
+                <label for="title">Title:</label><br>
+                <input type="text" id="title"><br>
+                <label for="content">Content:</label><br>
+                <input type="text" id="content"><br>
+                <button type="sumbit" id="submission">Submit</a></button> <br>
+            </form>
+
+
+        </section>
+    
     <script src="./assets/js/logic.js"></script>
+    <script src="./assets/js/form.js"></script>
 </body>
 
 </html>

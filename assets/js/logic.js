@@ -4,6 +4,7 @@ const headerEl = document.querySelector("header")
 const sectionEl = document.querySelectorAll("section")
 const h2El = document.querySelector("h2")
 const formEl = document.querySelector("form")
+const footerEl = document.querySelector("footer")
 
 let mode = "dark-mode";
 
@@ -22,6 +23,7 @@ toggle.addEventListener("click", function () {
             el.classList.add("light-mode")
             el.classList.remove("dark-mode")
         })
+    
     }
 
     else {
@@ -40,11 +42,5 @@ toggle.addEventListener("click", function () {
         })
     }
 });
-
-
-function myFunction() {
-    const element = document.querySelector('.Myfirstblog')
-    element.classList.add("dark-mode");
-}
 
 
