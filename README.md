@@ -1,1 +1,5 @@
 # MyFirstBlogChal
+This project was extremely difficult for me because it required a lot of different moving parts to make possible.
+One of the first challenges that I overcame was getting a button to toggle light and dark mode. I figured out how to get each of my individual classes to switch between modes on my index file, however I did not have the same luck on the blog file.
+Lastly, the form submission was difficult. I was able to come up with the error message function on my own, however, through the help of my TA, I was able to get the completed form to go through and store the values into the local storage. As you will be able to see, I still was unable to get that information to actually present iitself on the cards. 
+Overall, I do not believe that I did well on this project and it has made me realize that i have a lot to work on and study, but that's fine by me. I will put in the time and effort to make this weakness a strength.
