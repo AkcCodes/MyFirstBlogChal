@@ -1,5 +1,4 @@
-const submittedTitle = localStorage.getItem("submittedTitle");
-const submittedContent = localStorage.getItem("submittedContent");
+const submittedTitle = JSON.parse(localStorage.getItem("info"))
 
 // Display submitted data
 document.getElementById("submittedTitle").textContent = submittedTitle;
